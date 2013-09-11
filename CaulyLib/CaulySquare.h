@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "CaulyAdSetting.h"
-
+#import "CaulySquareAd.h"
 
 @interface CaulySquare : NSObject{
 
@@ -28,7 +28,14 @@
 //report action
 -(void)reportAction:(CaulySquareActionType)actionType extraInfo:(NSString*)extraInfo;
 
+//becomeActive
 -(void)didBecomeActive;
+
+//request offer list
+-(void)requestOfferList;
+
+//show detailView
+-(void)showDetailsForOffer:(CaulySquareAd *)squareAd;
 
 @property (nonatomic, assign) id<CaulySquareDelegate> delegate;
 @property (nonatomic, retain) CaulyAdSetting * localSetting;

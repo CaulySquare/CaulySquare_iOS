@@ -105,5 +105,20 @@
     NSLog(@"didCloseOfferwall");
 }
 
+//receive offerlist
+- (void)didReceiveOfferList:(NSArray*)offerArray retCode:(int)retCode retMsg:(NSString*)retMsg{
+    
+}
+
+//open offer details
+- (void)willOpenOfferDetails{
+    NSLog(@"willOpenOfferDetails");
+}
+
+//close offer details
+- (void)didCloseOfferDetails:(int)retCode retMsg:(NSString*)retMsg{
+    NSLog(@"didCloseOfferDetails  retCode : %d , retMsg : %@",retCode , retMsg);
+}
+
 
 @end

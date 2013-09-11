@@ -10,7 +10,7 @@
 
 #define TEST_APP_CODE			(@"CAULY")
 
-#define CAULY_SDK_VERSION		(@"4.0.0")
+#define CAULY_SDK_VERSION		(@"4.0.1")
 
 #define CAULY_ERR_SUCCESS		(0)
 #define CAULY_ERR_FAILED		(1)
@@ -130,9 +130,24 @@ typedef enum {
 
 @optional
 
+//receive offer status
 - (void)didReceiveOfferStatus:(int)retCode retMsg:(NSString*)retMsg;
+
+//open offerwall
 - (void)willOpenOfferwall;
+
+//close offerwall
 - (void)didCloseOfferwall:(int)retCode retMsg:(NSString*)retMsg;
+
+//receive offer list
+- (void)didReceiveOfferList:(NSArray*)offerArray retCode:(int)retCode retMsg:(NSString*)retMsg;
+
+//open offer details
+- (void)willOpenOfferDetails;
+
+//close offer details
+- (void)didCloseOfferDetails:(int)retCode retMsg:(NSString*)retMsg;
+
 
 @end
 
