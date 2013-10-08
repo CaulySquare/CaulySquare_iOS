@@ -46,6 +46,8 @@
 		53C98FD41529F95000DF0A37 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		53C98FD51529F95000DF0A37 /* RootViewController~iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "RootViewController~iPad.xib"; sourceTree = "<group>"; };
 		53C98FD81529FB0E00DF0A37 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		EC0464F617F565C80007039F /* CaulySquareAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaulySquareAd.h; sourceTree = "<group>"; };
+		EC0464F717F565C80007039F /* CaulySquareDisplayAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaulySquareDisplayAd.h; sourceTree = "<group>"; };
 		EC9012271630F30C001FD63A /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		EC9012291630F311001FD63A /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		EC90122B1630F31C001FD63A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -155,6 +157,8 @@
 		ECFF1FAC17DDAE2E00ACC8E2 /* CaulyLib */ = {
 			isa = PBXGroup;
 			children = (
+				EC0464F617F565C80007039F /* CaulySquareAd.h */,
+				EC0464F717F565C80007039F /* CaulySquareDisplayAd.h */,
 				ECFF1FAD17DDAE2E00ACC8E2 /* Cauly.h */,
 				ECFF1FAE17DDAE2E00ACC8E2 /* CaulyAdSetting.h */,
 				ECFF1FAF17DDAE2E00ACC8E2 /* CaulyAdView.h */,

@@ -10,7 +10,7 @@
 
 #define TEST_APP_CODE			(@"CAULY")
 
-#define CAULY_SDK_VERSION		(@"4.0.1")
+#define CAULY_SDK_VERSION		(@"4.0.2")
 
 #define CAULY_ERR_SUCCESS		(0)
 #define CAULY_ERR_FAILED		(1)
@@ -19,6 +19,7 @@
 // 전방선언
 @class CaulyAdView;
 @class CaulyInterstitialAd;
+@class CaulySquareDisplayAd;
 
 // 광고 갱신 시간
 typedef enum {
@@ -71,6 +72,7 @@ typedef enum {
 
 
 //square ad
+
 typedef enum {
     CaulySquareActionTypeInstall,
     CaulySquareActionTypeClick,
@@ -151,3 +153,20 @@ typedef enum {
 
 @end
 
+// Cauly Display 광고 이벤트 Delegate
+@protocol CaulySquareDisplayAdDelegate <NSObject>
+
+@optional
+// 광고 정보 수신 성공
+- (void)didReceiveSquareDisplayAd:(CaulySquareDisplayAd *)displayAd;
+
+// 광고 정보 수신 실패
+- (void)didFailToReceiveDisplayAd:(CaulySquareDisplayAd *)displayAd errorCode:(int)errorCode errorMsg:(NSString *)errorMsg;
+
+// Display 형태의 광고가 보여지기 직전
+- (void)willShowDisplayAd:(CaulySquareDisplayAd *)displayAd;
+
+// Display 형태의 광고가 닫혔을 때
+- (void)didCloseDisplayAd:(CaulySquareDisplayAd *)displayAd;
+
+@end

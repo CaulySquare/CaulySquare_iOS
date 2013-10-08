@@ -14,6 +14,7 @@
 #import "CaulySquare.h"
 
 
+
 @implementation AppDelegate
 
 @synthesize window = _window;
@@ -86,7 +87,10 @@
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
 	NSLog(@"applicationWillEnterForeground");
-	
+    
+	// CaulySquare didBecomeActive
+    [[CaulySquare sharedInstance] didBecomeActive];
+    
 	// Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
 
@@ -94,8 +98,7 @@
 {
 	NSLog(@"applicationDidBecomeActive");
     
-    // CaulySquare didBecomeActive
-    [[CaulySquare sharedInstance] didBecomeActive];
+    
 	
 	// Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
