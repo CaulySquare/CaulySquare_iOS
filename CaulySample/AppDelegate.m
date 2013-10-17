@@ -38,7 +38,7 @@
 -(void)initCaulySquare
 {
      
-    CaulyAdSetting * adSetting = [CaulyAdSetting adSettingWithAppCode:@"SQUARE_TEST_1"];     //발급받은 앱코드 입력
+    CaulyAdSetting * adSetting = [CaulyAdSetting adSettingWithAppCode:@"APPCODE"];     //발급받은 앱코드 입력
     [CaulySquare initWithAdSetting:adSetting];          //CaulySquare init 
 
 }

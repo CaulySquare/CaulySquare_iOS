@@ -66,7 +66,7 @@
         return;
     
     
-    _displayAd = [[CaulySquareDisplayAd alloc] initWithAdSetting:[CaulyAdSetting adSettingWithAppCode:@"squaretest4"]];
+    _displayAd = [[CaulySquareDisplayAd alloc] initWithAdSetting:[CaulyAdSetting adSettingWithAppCode:@"APPCODE"]];
     _displayAd.delegate = self;
     
     [_displayAd request];
